@@ -1,0 +1,1301 @@
+/* General Classes */
+* {
+	box-sizing: border-box;
+	font-family: "Open Sans";
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.positioner {
+	position: relative;
+	width: 0;
+	height: 0;
+}
+
+.one-half {
+	width: 50%;
+	float: left;
+}
+
+.section-container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.background {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Gray%20Background_zpsrcrfh4ri.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.vibrant-background {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Blue%20Background_zpseh274zpo.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+
+.general-background {
+	background-color: #00AEEF;
+}
+
+.advertiser-background {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Advertiser%20Background_zpscrapajas.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.developer-background {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Developer%20Background_zpsoxgjtixk.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Clearfix */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* View */
+div.viewbox {
+	z-index: -100;
+}
+
+/* Header */
+div.header {
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	padding-bottom: 10px;
+	background-color: #FFF;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.header div.header-logo {
+	width: 10%;
+	float: left;
+}
+
+div.header h2 {
+	font-family: "News Cycle";
+	text-transform: lowercase;
+	color: #4D4D4D;
+}
+
+div.header h2:hover {
+	color: #00AEEF;
+	transition: all 0.3s ease;
+}
+
+div.header a, div.header a:hover {
+	text-decoration: none;
+}
+
+div.header div.header-welcome {
+	width: 50%;
+	float: left;
+	text-align: left;
+}
+
+div.header div.header-welcome div.welcome-toggle, div.header div.header-welcome div.welcome-placeholder {
+	width: 100%;
+}
+
+div.header div.welcome-placeholder h2 {
+	font-family: "News Cycle";
+	color: #FFF;
+	text-transform: lowercase;
+}
+
+div.header div.welcome-toggle h4 {
+	font-family: "News Cycle";
+	position: relative;
+	transform: translate(0px,9px);
+}
+
+div.header div.welcome-toggle h5 {
+	font-family: "News Cycle";
+	text-transform: uppercase;
+}
+
+div.header div.header-buttons {
+	width: 40%;
+	float: left;
+	text-align: right;
+	margin-top: 15px;
+}
+
+div.header form {
+	display: inline-block;
+}
+
+div.header input {
+	display: inline-block;
+	border: none;
+	border-bottom: 1px solid #D6D6D6;
+	width: 200px;
+	background-color: #FFF;
+}
+
+div.header input::-webkit-input-placeholder {
+	color: #D6D6D6;
+	font-style: italic;
+}
+
+div.header button.search-button {
+	background-color: #FFF;
+	border: none;
+	border-radius: 5px;
+}
+
+div.header button.search-button .glyphicon-search-color {
+	color: #D6D6D6;
+}
+
+div.header button.search-button:hover .glyphicon-search-color {
+	color: #4D4D4D;
+}
+
+div.header button.search-button:active .glyphicon-search-color {
+	color: #00AEEF;
+}
+
+div.header button {
+	display: inline-block;
+}
+
+div.header button.header-button {
+	background-color: #D6D6D6;
+	border-radius: 5px;
+	border: none;
+	padding: 8px;
+	width: 45px;
+	margin-left: 5px;
+}
+
+div.header button.header-button:hover {
+	background-color: #4D4D4D;
+	transition: all 0.3s ease;
+}
+
+div.header button.header-button:active {
+	background-color: #00AEEF;
+	transition: all 0.3s ease;
+}
+
+div.header button.header-button img {
+	width: 30px;
+	height: auto;
+	text-align: center;
+}
+
+div.header button.header-button img.hamburger {
+	height: 25px;
+	width: auto;
+	text-align: center;
+}
+
+.menu-button-toggle > a {
+	display: none;
+}
+
+div.header .glyphicon-comment-color {
+	color: #FFF;
+	font-size: 20px;
+}
+
+div.header button.header-button img.message {
+	width: auto;
+	height: 25px;
+	text-align: center;
+}
+
+/* Hamburger Dropdown */
+#hamburger-button:active {
+	background-color: #D6D6D6;
+}
+
+.hamburger-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F9F9F9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translate(-150px, 0px);
+}
+
+.hamburger-dropdown-content a {
+    color: #4D4D4D;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.hamburger-dropdown-content a:hover {
+	background-color: #D6D6D6;
+	transition: all 0.3s ease;
+}
+
+.hamburger-dropdown-content a:active {
+	background-color: #00AEEF;
+	color: #FFF;
+}
+
+.show-hamburger-dropdown {
+	display: block;
+}
+
+/* Footer */
+div.footer {
+	background-color: #FFF;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+}
+
+div.footer-left {
+	width: 10%;
+	float: left;
+	text-align: left;
+}
+
+div.footer h5 {
+	text-transform: lowercase;
+	padding-top: 15px;
+	font-size: 16px;
+	color: #4D4D4D;
+	position: relative;
+	transform: translate(0,-12px);
+}
+
+div.footer-right {
+	width: 90%;
+	float: right;
+	text-align: right;
+}
+
+div.footer-right ul {
+	list-style: none;
+	padding-top: 15px;
+}
+
+div.footer-right ul li {
+	display: inline-block;
+}
+
+div.footer-right ul li a {
+	color: #4D4D4D;
+}
+
+/* Segment Jumbotron */
+div.segment-jumbotron {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Jumbotron%20002%20Edited_zpsjohugidd.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin-top: 70px;
+	background-size: cover;
+	padding-top: 66px;
+	height: 766px;
+	z-index: -100;
+}
+
+div.segment-jumbotron img {
+	width: 240px;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+div.segment-jumbotron h2 {
+	color: #FFF;
+	font-family: "News Cycle";
+	font-size: 22px;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	text-transform: uppercase;
+	position: relative;
+	transform: translate(0,-11px);
+}
+
+div.segment-jumbotron h3 {
+	color: #FFF;
+	font-family: "News Cycle";
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	display: block;
+	width: 500px;
+	margin: 0px auto;
+}
+
+div.segment-jumbotron a {
+	width: 170px;
+	border: 3px solid #FFF;
+	display: block;
+	margin: 0px auto;
+	margin-top: 30px;
+	margin-bottom: -20px;
+	height: 50px;
+}
+
+div.segment-jumbotron a:hover, div.segment-jumbotron a.active:hover {
+	text-decoration: none;
+	background-color: #4D4D4D;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	transition: all 0.3s ease;
+}
+
+div.segment-jumbotron a:active {
+	text-decoration: none;
+	background-color: #FFF;
+}
+
+div.segment-jumbotron a.active {
+	text-decoration: none;
+}
+
+div.segment-jumbotron a:active, div.segment-jumbotron a.active:active {
+	transform: scale(0.95,0.95);
+}
+
+div.segment-jumbotron a:active h2, div.segment-jumbotron a.active h2, div.segment-jumbotron a.active:active h2 {
+	color: #00AEEF;
+	text-shadow: none;
+}
+
+div.segment-jumbotron a.active {
+	background-color: #FFF;
+}
+
+div.segment-jumbotron a.active:hover h2 {
+	color: #FFF;
+}
+
+/*div.segment-subheading {
+	display: inline-block;
+	width: 400px;
+}
+
+div.segment-jumbotron button {
+	background-color: #4D4D4D;
+	border-radius: 30px;
+	border: none;
+	width: 200px;
+	margin-bottom: 10px;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.3);
+	margin-left: 12px;
+}
+
+div.segment-jumbotron button.segment-jumbotron-active {
+	background-color: #00AEEF;
+}
+
+div.segment-jumbotron h4 {
+	color: #FFF;
+	font-family: "News Cycle";
+}
+
+div.segment-jumbotron button:hover {
+	background-color: #FFF;
+	transition: all 0.3s ease;
+}
+
+div.segment-jumbotron button:hover h4 {
+	color: #00AEEF;
+	transition: all 0.3s ease;
+}
+
+div.segment-jumbotron button:active {
+	transform: scale(0.95,0.95);
+	transition: all 0.3s ease;
+}*/
+
+/* Advertiser or Developer */
+div.segment-question {
+	background: url("http://www.fg-a.com/wallpapers/geo-shapes-black-1280.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 100px;
+}
+
+div.segment-question h1 {
+	color: #FFF;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-top: 20px;
+	margin-bottom: -17px;
+	font-family: "News Cycle";
+	font-size: 40px;
+}
+
+div.segment-question h2 {
+	color: #FFF;
+	font-size: 20px;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-bottom: 30px;
+	font-family: "News Cycle";
+	font-size: 22px;
+}
+
+div.segment-question a:hover {
+	text-decoration: none;
+}
+
+.advertiser-developer-width {
+	width: 450px;
+	display: inline-block;
+}
+
+div.advertiser-box {
+	background-color: #00AEEF;
+}
+
+div.advertiser-box h1, div.developer-box h1 {
+	padding-top: 55px;
+}
+
+div.advertiser-box h2, div.developer-box h2 {
+	padding-bottom: 55px;
+}
+
+div.advertiser-box:active {
+	background-color: #FFF;
+	transition: all 1s ease;
+}
+
+div.advertiser-box:active h1, div.advertiser-box:active h2, div.advertiser-box:active .glyphicon-bullhorn-color {
+	color: #00AEEF;
+	text-shadow: none;
+	transition: all 1s ease;
+}
+
+.glyphicon-bullhorn-color, .glyphicon-phone-color {
+	color: #FFF;
+	font-size: 60px;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+div.developer-box {
+	background-color: #E85A5C;
+}
+
+div.developer-box:active {
+	background-color: #FFF;
+	transition: all 1s ease;
+}
+
+div.developer-box:active h1, div.developer-box:active h2, div.developer-box:active .glyphicon-phone-color {
+	color: #E85A5C;
+	text-shadow: none;
+	transition: all 1s ease;
+}
+
+/* Signup & Login Page */
+div.signup-section {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Signup%20Background_zpsn9qjoiji.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	padding-bottom: 50px;
+	width: 100%;
+	margin-top: 70px;
+}
+
+div.signup-section div.signup-box, div.signup-section div.login-box {
+	background-color: #FFF;
+	width: 450px;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+div.signup-section div.signup-header {
+	width: 100%;
+	background-color: #ED1C24;
+}
+
+div.signup-section div.login-header {
+	width: 100%;
+	background-color: #EEBC30;
+}
+
+div.signup-section h1 {
+	font-family: "News Cycle";
+	color: #FFF;
+	text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	text-align: center;
+	margin-top: 40px;
+}
+
+div.signup-section div.container > h1 {
+	margin-bottom: -20px;
+	font-size: 50px;
+}
+
+div.signup-header h1, div.login-header h1 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}
+
+div.signup-section form {
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+
+div.signup-section h2 {
+	font-family: "News Cycle";
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+
+div.signup-section label {
+	display: block;
+	margin-bottom: -2px;
+}
+
+div.signup-section input {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+div.signup-section select {
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+div.signup-section input.checkbox {
+	display: inline;
+	text-align: left;
+}
+
+div.signup-section label.checkbox-label {
+	display: inline-block;
+	margin-bottom: 5px;
+	position: relative;
+	transform: translate(0,-10px);
+}
+
+div.signup-section button {
+	display: block;
+	margin: 0px auto;
+	width: 120px;
+	height: 50px;
+	background-color: #4D4D4D;
+	border: none;
+}
+
+div.signup-section button h3 {
+	font-family: "News Cycle";
+	position: relative;
+	color: #FFF;
+	transform: translate(0,-50%);
+}
+
+div.signup-section div.signup-box button:hover {
+	background-color: #ED1C24;
+	transition: all 0.3s ease;
+}
+
+div.signup-section div.login-box button:hover {
+	background-color: #EEBC30;
+	transition: all 0.3s ease;
+}
+
+div.signup-section button:active {
+	transform: scale(0.95,0.95);
+}
+
+/* Upload Page (Advertiser) */
+div.upload-section {
+	padding-top: 70px;
+	padding-bottom: 20px;
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Jumbotron%20002%20Edited%20Simple_zpsl3p2f3uo.png");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: -72px 0px;
+}
+
+div.upload-developer-section {
+	background-position: 14px 0px;
+}
+
+div.upload-box {
+	width: 550px;
+	background-color: #FFF;
+	display: block;
+	margin: 0px auto;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+
+div.upload-box div.upload-header {
+	width: 100%;
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+
+div.upload-section h1 {
+	font-family: "News Cycle";
+	text-align: center;
+	color: #FFF;
+}
+
+div.upload-section form {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.upload-section h5 {
+	display: block;
+	margin-bottom: -7px;
+}
+
+div.upload-section h6 {
+	font-size: 14px;
+}
+
+div.upload-section input, div.upload-section textarea {
+	display: block;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+div.upload-section textarea {
+	height: 150px;
+}
+
+div.upload-section button.upload-button {
+	width: 200px;
+	border: none;
+	background-color: #4D4D4D;
+	color: #FFF;
+	display: block;
+	margin: 0px auto;
+}
+
+div.upload-section button.upload-button.advertiser-button:hover {
+	background-color: #EEBC30;
+}
+
+div.upload-section button.upload-button.developer-button:hover {
+	background-color: #ED1C24;
+}
+
+div.upload-section button.upload-button:active {
+	transform: scale(0.95,0.95);
+}
+
+/* Profile Redirect */
+div.redirect-section {
+	background-color: #00AEEF;
+	transform: translate(0,70px);
+	z-index: -100;
+	padding-top: 30px;
+	padding-bottom: 465px;
+	margin-bottom: 70px;
+}
+
+div.redirect-section p {
+	color: #FFF;
+}
+
+/* Advertiser Profile */
+div.profile-section {
+	margin-top: 70px;
+	padding-bottom: 0;
+}
+
+div.profile-box {
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
+}
+
+div.profile-section div.profile-cover {
+	width: 100%;
+	background-color: #FFF;
+	padding-bottom: 1px solid #D6D6D6;
+}
+
+div.profile-section div.profile-cover-photo {
+	background: url("https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/13442235_1715603191990352_6254506269756204983_n.png?oh=29678ef77882dacd3e27845f4c1c3bf0&oe=582E95E8&__gda__=1479485368_a706da62d67f28877cf28280bee766ad") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+div.profile-section div.profile-picture {
+	background: url("https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/10299960_1558651074352232_2478360997668681311_n.jpg?oh=eec14bffe6dcbd13dd9c1783b1f9a475&oe=5831CF7F") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #D6D6D6;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	position: relative;
+	transform: translate(0,-130px);
+	margin-bottom: -130px;
+}
+
+div.profile-section div.strip {
+	background-color: #D6D6D6;
+	width: 100%;
+	height: 80px;
+	margin-bottom: -50px;
+}
+
+div.profile-section div.section-container.cover {
+	padding-bottom: 200px;
+}
+
+div.profile-section div.profile-cover h3, div.profile-section div.profile-cover h3 {
+	font-size: 20px;
+}
+
+div.profile-section div.profile-list {
+	background-color: #FFF;
+	width: 100%;
+	border-top: 1px solid #D6D6D6;
+	padding-bottom: 30px;
+}
+
+div.profile-section div.section-container {
+	padding-bottom: 250px;
+}
+
+div.profile-section div.profile-list-left {
+	width: 66%;
+	margin-right: 2%;
+	float: left;
+	padding-top: 20px;
+}
+
+div.profile-section div.profile-list-right {
+	width: 32%;
+	float: left;
+	padding-top: 40px;
+	position: relative;
+}
+
+div.profile-section div.profile-list-full {
+	width: 100%;
+	float: left;
+}
+
+div.profile-profile-section div.profile-list h1 {
+	font-family: "News Cycle";
+	padding: 0;
+}
+
+div.profile-thumbnail {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #D6D6D6;
+	background-color: #D6D6D6;
+	float: left;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+div.profile-thumbnail:first-child {
+	
+}
+
+div.profile-thumbnail > img {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+div.profile-section div.profile-campaign button {
+}
+
+div.profile-section div.developer-cover-photo {
+	background: url("http://i346.photobucket.com/albums/p438/adimitui/Adelle%20Cover%20001_zpsre5f5atq.jpg") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+}
+
+div.profile-section div.developer-profile-picture {
+	background: url("https://avatars0.githubusercontent.com/u/19665962?v=3&s=460") center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 200px;
+	height: 200px;
+	border: 1px solid #D6D6D6;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	position: relative;
+	transform: translate(0,-130px);
+	margin-bottom: -130px;
+}
+
+div.profile-section div.profile-list-left.developer-list-left {
+	width: 68%;
+	padding-right: 10px;
+	margin: 0;
+}
+
+div.profile-section div.profile-list-right.developer-list-right {
+	width: 32%;
+}
+
+/* Browse Advertisements */
+div.browse-section {
+	margin-top: 70px;
+}
+
+div.browse-section .advertiser-button:hover {
+	background-color: #EEBC30;
+}
+
+div.browse-section div.browse-header {
+	width: 100%;
+	background-color: #00AEEF;
+	text-align: center;
+	padding-top: 1px;
+	padding-bottom: 10px;
+}
+
+div.browse-section div.browse-header h1 {
+	font-family: "News Cycle";
+	color: #FFF;
+}
+
+div.browse-section div.browse-list {
+	background-color: #FFF;
+	width: 100%;
+	border-top: 1px solid #D6D6D6;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.last {
+	margin-bottom: 30px;
+}
+
+div.browse-section div.browse-list-left {
+	width: 70%;
+	padding-right: 10px;
+	padding-left: 15px;
+	float: left;
+}
+
+div.browse-section div.browse-list-right {
+	width: 30%;
+	padding-right: 15px;
+	float: left;
+}
+
+div.browse-section div.browse-list-right h5 {
+	margin-top: 20px;
+}
+
+div.browse-section button {
+	margin-top: 10px;
+	padding: 5px 20px;
+	font-size: 15px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #4D4D4D;
+	color: #FFF;
+	border: none;
+}
+
+div.browse-section button:hover {
+	background-color: #00AEEF;
+	transition: all 0.3s ease;
+}
+
+div.browse-section button:active {
+	transform: scale(0.95,0.95);
+	transition: all 0.3s ease;
+}
+
+div.browse-section button.advertiser-button:hover {
+	background-color: #EEBC30;
+}
+
+div.browse-section button.developer-button:hover {
+	background-color: #ED1C24;
+}
+
+/* Draft Proposal */
+div.lightbox {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.8);
+	position: fixed;
+	text-align: center;
+}
+
+div.proposal-box {
+	position: absolute;
+	background-color: #FFF;
+	position: fixed;
+	width: 800px;
+	display: inline-block;
+	margin-top: 100px;
+	transform: translate(-50%,0);
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+	max-height: calc(100vh - 130px);
+	overflow-y: auto;
+	padding-bottom: 70px;
+}
+
+div.proposal-box-container {
+	width: 97%;
+	margin: 0px auto;
+	display: block;
+}
+
+div.proposal-box div.proposal-box-strip {
+	background-color: #00AEEF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+div.proposal-box div.one-half {
+	width: 50%;
+}
+
+div.proposal-box div.one-half .glyphicon-remove-color {
+	text-align: right;
+	font-size: 25px;
+	color: #FFF;
+	float: right;
+	transform: translate(0,5px);
+}
+
+div.proposal-box div.proposal-box-strip h4 {
+	text-align: left;
+	color: #FFF;
+	font-family: "News Cycle";
+}
+
+div.proposal-box form > h4:first-child {
+	margin-top: 70px;
+	margin-left: 50px;
+}
+
+div.proposal-box div.proposal-box-file-selector {
+	width: 90%;
+	border: 3px dashed #00AEEF;
+	border-radius: 20px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+
+div.proposal-box div.proposal-box-file-selector label {
+	display: inline-block;
+	color: #00AEEF;
+	position: relative;
+	transform: translate(0,-15px);
+	font-size: 25px;
+}
+
+div.proposal-box div.proposal-box-file-selector input#getFile {
+	display: none;
+}
+
+.glyphicon-file-color {
+	color: #00AEEF;
+	display: inline-block;
+	font-size: 50px;
+	margin-left: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+div.proposal-box div.proposal-box-file-selector:active {
+	background-color: #00AEEF;
+	transition: all 0.3s ease;
+}
+
+div.proposal-box div.proposal-box-file-selector:active label, div.proposal-box div.proposal-box-file-selector:active .glyphicon-file-color {
+	color: #FFF;
+	transition: all 0.3s ease;
+}
+
+div.proposal-box h2 {
+	margin-top: -10px;
+	position: relative;
+	transform: translate(0,0);
+	margin-bottom: 30px;
+	color: #00AEEF;
+}
+
+div.proposal-box input.app-name {
+	width: 100%;
+
+}
+
+div.proposal-box textarea {
+	width: 100%;
+	height: 100px;
+}
+
+div.proposal-box button {
+	text-align: center;
+	display: inline-block;
+	padding: 8px 40px 14px 40px;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+
+div.proposal-box div.proposal-box-strip-bottom {
+	position: absolute;
+	background-color: #00AEEF;
+	width: 100%;
+	height: 30px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+	position
+}
+
+div.proposal-box div.proposal-box-strip-bottom h5 {
+	color: #FFF;
+	text-align: left;
+	font-family: "News Cycle";
+	position: relative;
+	transform: translate(0,-5px);
+}
+
+/* Proposal Page */
+div.proposal-section {
+	margin-top: 70px;
+}
+
+div.proposal-whole {
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+	background-color: #FFF;
+	width: 100%;
+}
+
+div.proposal-section div.proposal-container {
+	width: 1000px;
+}
+
+div.proposal-section div.proposal-header {
+	width: 100%;
+	background-color: #00AEEF;
+	text-align: center;
+	font-family: "News Cycle";
+	color: #FFF;
+	padding-top: 1px;
+	padding-bottom: 7px;
+}
+
+div.proposal-section div.proposal-list {
+	width: 100%;
+	color: #FFF;
+	border-bottom: 1px solid #D6D6D6;
+}
+
+div.proposal-section div.proposal-list-container {
+	width: 97%;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+div.proposal-picture {
+	width: 150px;
+	float: left;
+}
+
+div.proposal-thumbnail {
+	width: 150px;
+	height: 150px;
+	border: 1px solid #D6D6D6;
+	float: left;
+}
+
+div.proposal-thumbnail img {
+	width: 100%;
+	height: 100%;
+	float: left;
+}
+
+div.proposal-picture button {
+	width: 100%;
+	border: none;
+	background-color: #D6D6D6;
+	text-transform: uppercase;
+}
+
+div.proposal-section div.proposal-info {
+	width: 30%;
+	float: left;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+div.proposal-section div.proposal-list-container h2 {
+	color: #4D4D4D;
+	margin-bottom: -10px;
+}
+
+div.proposal-section div.proposal-list-container h3 {
+	color: #4D4D4D;
+	margin-bottom: -10px;
+}
+
+div.proposal-section div.proposal-detail {
+	width: 56%;
+	float: left;
+}
+
+div.proposal-detail div.detail-button {
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	background-color: #4D4D4D;
+}
+
+div.proposal-detail div.detail-button h4 {
+	color: #FFF;
+}
+
+div.proposal-detail div.detail-button.active {
+	background-color: #00AEEF;
+}
+
+div.proposal-section div.detail-box {
+	width: 100%;
+	color: #FFF;
+	border: 1px solid #D6D6D6;
+	background-color: #F2F2F2;
+	height: 180px;
+	padding: 10px;
+}
+
+div.proposal-detail p {
+	color: #4D4D4D;
+}
+
+div.proposal-detail div.proposal-status {
+	width: 40%;
+	float: left;
+}
+
+div.proposal-section div.proposal-status > h4 {
+	display: inline-block;
+	color: #4D4D4D;
+	margin-right: 5px;
+	position: relative;
+	transform: translate(0,-39px);
+}
+
+div.proposal-section div.status-button {
+	width: 130px;
+	display: inline-block;
+	background-color: #D6D6D6;
+	text-align: center;
+	position: relative;
+	transform: translate(0,-39px);
+}
+
+.selected-status {
+	color: #00AEEF;
+}
+
+div.proposal-confirmation {
+	width: 100%;
+}
+
+div.proposal-confirmation div.shift-right {
+	margin-left: 481px;
+}
+
+div.proposal-confirmation button {
+	color: #FFF;
+	padding: 0px 30px;
+	background-color: #4D4D4D;
+	border: none;
+	margin-top: 15px;
+	margin-bottom: 40px;
+}
+
+div.lightbox > img {
+	margin-top: 100px;
+	max-height: calc(100vh - 130px);
+	width: auto;
+	box-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+}
+
+/* Mobile Optimization */
+@media(max-width: 1053px) {
+	div.segment-question .one-half {
+		width: 100%;
+	}
+}
